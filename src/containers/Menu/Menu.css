@@ -1,0 +1,116 @@
+
+.specialmenu{
+    background-color: var(--color-black);
+    /* margin: 1px 0px; */
+}
+.app__specialmenu{
+    /* background: black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.app__specialmenu-title{
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.app__specialmenu-menu{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 2rem 0;
+}
+.app__specialmenu-menu_wine,.app__specialmenu-menu_cocktail{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0rem 3rem;
+}
+.app__specialmenu_menu_heading{
+    text-align: center;
+    font-family: var(--font-base);
+    font-weight: 600;
+    font-size: 23px;
+    line-height: 45px;
+    color: var(--color-white);
+    letter-spacing: 0.04em;
+}
+
+.app__specialmenu-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 410px;
+    /* padding: 5rem 5rem; */
+
+}
+.app__specialmenu-img img{
+    height:100vh;
+    width: 100%;
+
+}
+.app__specialmenu-menu_item{
+    margin: 0rem 6rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+@media screen and (max-width:2000px){
+    .app__specialmenu-menu{
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+  
+    .app__specialmenu-menu-item{
+        display: flex;
+        justify-content:space-between;
+        align-items:center;
+        flex: 1;
+    }
+    .app__specialmenu-menu_cocktail{
+        margin-top: 2rem;
+    }
+}
+@media screen and (max-width:1150px){
+    .app__specialmenu-menu{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+}
+@media screen and (max-width:650px){
+    .app__specialmenu-img{
+        width: 100%;
+    }
+    .app__specialmenu-img img{
+        height: auto;
+        width: 50%;
+        margin: 3rem 0.4rem;
+    }
+    .app__specialmenu_menu_heading{
+        font-size: 30px;
+        line-height: 48.5px;
+    }
+
+    .app__specialmenu-menu_item{
+        /* flex: 1; */
+        width: 90%;
+    }
+   
+
+}
+
+.app__specialmenu_menu_heading{
+    font-family: cursive;
+    font-size: 24px;
+    text-overflow: ellipsis;
+    text-shadow:1px 1px 8px rgb(212, 13, 46);
+}
+
